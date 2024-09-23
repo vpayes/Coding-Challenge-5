@@ -31,4 +31,10 @@ function placeOrder(custommerName, items) {
 }
 console.log(placeOrder(`Order placed for ${customerName}`));
 
-//
+// Task 4: Create a Function to Calculate Total for an Order
+function calculateOrderTotals(order) {
+    return order.item. reduce((total, orderItem) => {
+        const product = inventory. find(item => item.name === orderItem.name);
+        return total + (product.price * orderItem.quantity);
+    }, 0);
+}
