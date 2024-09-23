@@ -9,3 +9,26 @@ const inventory = [
 // Task 2: Create an Orders Array of Order Objects
 let orders = []
 
+// Task 3: Create a Function to Place an Order 
+function placeOrder(custommerName, items) {
+    for (let quantity in items) {
+        inventory.find(items => items.name === items);
+        if (!items) { 
+            console.log("Error: Item not avaliable.");
+            break;
+        }
+    }
+    for (let quantity in items) {
+        inventory.find(item => items.name === items);
+        items.quantity -= inventory.quantity;
+    }
+    orders.push({
+        customerName: customerName,
+        items: orderedItems,
+        status: "Pending"
+    });
+
+}
+console.log(placeOrder(`Order placed for ${customerName}`));
+
+//
